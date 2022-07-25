@@ -1,18 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+       <ClickCounter />
+       <HoverCounter />
+       <InactiveUsers />
+       <ActiveUsers />
+       <h1>Search Bar</h1>
+       <SearchBar />
+       <h1>Computed Property</h1>
+       <ComputedProperty />
   </div>
+  <!-- Reference:- https://www.youtube.com/watch?v=LyG_l5UoeHI -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ClickCounter from './components/ClickCounter.vue';
+import HoverCounter from './components/HoverCounter.vue';
+import InactiveUsers from './components/InactiveUsers.vue';
+import ActiveUsers from './components/ActiveUsers.vue';
+import SearchBar from './components/SearchBar.vue';
+import ComputedProperty from './components/ComputedProperty.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    ClickCounter,
+    HoverCounter,
+    InactiveUsers,
+    ActiveUsers,
+    SearchBar,
+    ComputedProperty
+}
 }
 </script>
 
